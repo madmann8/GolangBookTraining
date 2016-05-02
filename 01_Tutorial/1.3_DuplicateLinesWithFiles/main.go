@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 )
+
 //Attempt Exercise 1.4
 func main() {
 	counts := make(map[string]int)
@@ -22,10 +23,10 @@ func main() {
 			f.Close()
 		}
 	}
-	name:=os.FileInfo.Name(os.Args[1])
+	name := os.FileInfo.Name(os.Args[1])
 	for line, n := range counts {
 		if n > 1 {
-			fmt.Printf("%d\t%s\n", n, line,name)
+			fmt.Printf("%d\t%s\n", n, line, name)
 		}
 	}
 }

@@ -14,8 +14,8 @@ func main() {
 	}
 	fmt.Println(s)
 	fmt.Println(os.Args[0])
-	for n,m := range os.Args {
-		fmt.Println(n,m)
+	for n, m := range os.Args {
+		fmt.Println(n, m)
 	}
 }
 
