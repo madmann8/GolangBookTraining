@@ -15,7 +15,7 @@ func main() {
 		}
 		resp, err := http.Get(url)
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
+			fmt.Fprintf(os.Sterr, "fetch: %v\n", err)
 			os.Exit(1)
 		}
 		if strings.HasPrefix(url, "http://")!= true {
