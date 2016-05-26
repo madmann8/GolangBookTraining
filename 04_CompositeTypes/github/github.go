@@ -37,7 +37,7 @@ func SearchIssues(terms []string) (*IssuesSearchResult, error) {
 		return nil, err
 	}
 	//!-
-	// For long-term stability, instead of http.Get, use the
+	// For long-
 	// variant below which adds an HTTP request header indicating
 	// that only version 3 of the GitHub API is acceptable.
 	//

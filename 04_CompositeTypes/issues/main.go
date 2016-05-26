@@ -29,7 +29,7 @@ func main() {
 		if time.Since(item.CreatedAt)>31556952000000000 {
 			//How to make table format:
 			fmt.Printf("#%-5d %9.9s %.55s %.55s\n",
-				item.Number, item.User.Login, item.Title)
+				item.Number, item.User.Login, item.Title,  item.CreatedAt)
 		}
 	}
 }
